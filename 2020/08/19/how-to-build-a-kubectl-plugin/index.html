@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>How to write a kubectl plugin using Golang &middot; Jean-Philippe Bond</title>
-        <meta name="description" content="Table of contents  Introduction Decide which plugin you want to develop Clone the Krew plugin template Implementing the plugin Installing the plugin Releasing the plugin on Github Publishing the plugin on Krew  Introduction Have you ever thought about extending kubectl cli to add a missing functionality? Actually, extending kubectl is fairly easy, in this blog post I’ll explain how you can write your own plugin with Go. Plugin can be develop in any programming language, but using Go is interesting since there is a template that you can use that make it easy to set all of the scaffolding up for a new plugin and even though there is Kubernetes SDK in most language, the primary Kubernetes libraries are all written in Go.">
+        <meta name="description" content="Table of contents  Introduction Decide which plugin you want to develop Clone the Krew plugin template Implementing the plugin Installing the plugin Releasing the plugin on Github Publishing the plugin on Krew  Introduction Have you ever thought about extending kubectl cli to add a missing functionality? Actually, extending kubectl is reasonably easy, in this blog post I’ll explain how you can write your own plugin with Go. Plugin can be develop in any programming language, but using Go is interesting since there is a template that helps you set all of the scaffolding up for a new plugin repo.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.54.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="How to write a kubectl plugin using Golang">
-<meta property="og:description" content="Table of contents  Introduction Decide which plugin you want to develop Clone the Krew plugin template Implementing the plugin Installing the plugin Releasing the plugin on Github Publishing the plugin on Krew  Introduction Have you ever thought about extending kubectl cli to add a missing functionality? Actually, extending kubectl is fairly easy, in this blog post I’ll explain how you can write your own plugin with Go. Plugin can be develop in any programming language, but using Go is interesting since there is a template that you can use that make it easy to set all of the scaffolding up for a new plugin and even though there is Kubernetes SDK in most language, the primary Kubernetes libraries are all written in Go.">
+<meta property="og:description" content="Table of contents  Introduction Decide which plugin you want to develop Clone the Krew plugin template Implementing the plugin Installing the plugin Releasing the plugin on Github Publishing the plugin on Krew  Introduction Have you ever thought about extending kubectl cli to add a missing functionality? Actually, extending kubectl is reasonably easy, in this blog post I’ll explain how you can write your own plugin with Go. Plugin can be develop in any programming language, but using Go is interesting since there is a template that helps you set all of the scaffolding up for a new plugin repo.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cloudnative.blog/2020/08/19/how-to-build-a-kubectl-plugin/">
         <link rel="stylesheet" href="https://cloudnative.blog/dist/styles.css">
@@ -143,13 +143,13 @@ if (!doNotTrack) {
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Have you ever thought about extending <code>kubectl</code> cli to add a missing functionality? Actually, extending <code>kubectl</code> is fairly easy, in this blog post I’ll explain how you can write your own plugin with <code>Go</code>. Plugin can be develop in any programming language, but using <code>Go</code> is interesting since there is a <a href="https://github.com/replicatedhq/krew-plugin-template">template</a> that you can use that make it easy to set all of the scaffolding up for a new plugin and even though there is <code>Kubernetes</code> SDK in most language, the primary Kubernetes libraries are all written in <code>Go</code>. Plugin developed with <code>Go</code>  also haves the advantage of working on any platform and beeing distributed as a single binary.</p>
+<p>Have you ever thought about extending <code>kubectl</code> cli to add a missing functionality? Actually, extending <code>kubectl</code> is reasonably easy, in this blog post I’ll explain how you can write your own plugin with <code>Go</code>. Plugin can be develop in any programming language, but using <code>Go</code> is interesting since there is a <a href="https://github.com/replicatedhq/krew-plugin-template">template</a> that helps you set all of the scaffolding up for a new plugin repo. Plugin developed with <code>Go</code> also have the advantage of working on any platform and being distributed as a single binary.</p>
 
 <h2 id="decide-which-plugin-you-want-to-develop">Decide which plugin you want to develop</h2>
 
 <p>Although it&rsquo;s possible to do almost anything, a <code>kubectl</code> plugin generally interact with the Kubernetes API. If it is not the case, you should ask yourself if your idea should really be a <code>kubectl</code> plugin. If you are not sure about what can be done, take a look a the list of <a href="https://github.com/kubernetes-sigs/krew-index/blob/master/plugins.md">existing plugins</a> on the <a href="https://github.com/kubernetes-sigs/krew">Krew</a> index.</p>
 
-<p>As an example, in this post, we are going to develop a simple plugin which allows to visualize <a href="https://kubernetes.io/docs/concepts/services-networking/network-policies/">network policies</a> rules. The final implementation of the plugin can be found in the following repository : <a href="https://github.com/runoncloud/kubectl-np-viewer">kubectl-np-viewer</a>.</p>
+<p>In this post, we are going to develop a simple plugin which allows to visualize <a href="https://kubernetes.io/docs/concepts/services-networking/network-policies/">network policies</a> rules. The final implementation of the plugin can be found in the following repository : <a href="https://github.com/runoncloud/kubectl-np-viewer">kubectl-np-viewer</a>.</p>
 
 <h2 id="clone-the-krew-plugin-template">Clone the Krew plugin template</h2>
 
@@ -264,7 +264,7 @@ func RootCmd() *cobra.Command {
 <ol>
 <li>Fetch the Network Policies using the API</li>
 <li>Filter the result based on the flags values</li>
-<li>Print the result in a table using a library called <a href="https://github.com/olekukonko/tablewriter">Tablewriter</a></li>
+<li>Print the result in a table</li>
 </ol>
 
 <p>We&rsquo;re gonna use the Kubernetes <a href="https://github.com/kubernetes/client-go">Go client</a> to fetch the Network Policies and a library called <a href="https://github.com/olekukonko/tablewriter">Tablewriter</a> to print the result.</p>
@@ -327,8 +327,6 @@ func renderTable(tableLines []TableLine) {
 ...
 </code></pre>
 
-<p>Voila! The plugin is almost done!</p>
-
 <h2 id="installing-the-plugin">Installing the plugin</h2>
 
 <p>The template comes with a <code>Makefile</code> that has everything you need to build your plugin. Just make sure that you changed the values to point to your github repository</p>
@@ -359,12 +357,12 @@ require (
 )
 </code></pre>
 
-<p>To build your plugin execute to following command :</p>
+<p>To build your plugin execute the bin command :</p>
 
 <pre><code>make bin
 </code></pre>
 
-<p>The binary will be generated in the <code>bin</code> folder. You can move the binary to your <code>$GOPATH</code> if you want to be able to use it from anywhere. In this case, this can be done by executing the following command.</p>
+<p>The binary will be generated in the <code>bin</code> folder. You can move the binary to your <code>$GOPATH</code> if you want to be able to use it from anywhere :</p>
 
 <pre><code>cp bin/kubectl-np-viewer $GOPATH/bin
 </code></pre>
@@ -470,7 +468,7 @@ spec:
     Policies rules easily understandable
 </code></pre>
 
-<p>Note that the process of updating the manifest everytime a new version of your plugin is release can be automated with a Github Action that use the <a href="https://github.com/rajatjindal/krew-release-bot">Krew Release Bot</a>. For a fully automated release process that create the binaries and make a PR on the Krew Index when a new tag is pushed, you can use the following Github Action :</p>
+<p>Note that the process of updating the manifest every time a new version of your plugin is release can be automated with a Github Action that use the <a href="https://github.com/rajatjindal/krew-release-bot">Krew Release Bot</a>. For a fully automated release process that create the binaries and make a PR on the Krew Index when a new tag is pushed, you can use the following Github Action :</p>
 
 <pre><code>name: release
 on:
