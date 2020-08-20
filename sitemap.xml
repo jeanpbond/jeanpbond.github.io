@@ -3,82 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jeanpbond.github.io/2020/08/19/how-to-build-a-kubectl-plugin/</loc>
+    <loc>https://cloudnative.blog/2020/08/19/how-to-build-a-kubectl-plugin/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/page/contact/</loc>
+    <loc>https://cloudnative.blog/page/contact/</loc>
     <lastmod>2020-04-03T02:13:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/page/about/</loc>
+    <loc>https://cloudnative.blog/page/about/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/</loc>
+    <loc>https://cloudnative.blog/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/tags/devops/</loc>
+    <loc>https://cloudnative.blog/tags/devops/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/tags/go/</loc>
+    <loc>https://cloudnative.blog/tags/go/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/tags/golang/</loc>
+    <loc>https://cloudnative.blog/tags/golang/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/tags/k8s/</loc>
+    <loc>https://cloudnative.blog/tags/k8s/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/tags/kubectl/</loc>
+    <loc>https://cloudnative.blog/tags/kubectl/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/tags/kubernetes/</loc>
+    <loc>https://cloudnative.blog/tags/kubernetes/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/page/</loc>
+    <loc>https://cloudnative.blog/page/</loc>
     <lastmod>2020-04-03T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/tags/plugin/</loc>
+    <loc>https://cloudnative.blog/tags/plugin/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/post/</loc>
+    <loc>https://cloudnative.blog/post/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeanpbond.github.io/tags/</loc>
+    <loc>https://cloudnative.blog/tags/</loc>
     <lastmod>2020-08-19T02:13:50+00:00</lastmod>
     <priority>0</priority>
   </url>

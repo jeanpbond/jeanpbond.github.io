@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Cloud Native blog</title>
-    <link>https://jeanpbond.github.io/tags/golang/</link>
+    <link>https://cloudnative.blog/tags/golang/</link>
     <description>Recent content in Golang on Cloud Native blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jean-Philippe Bond</copyright>
     <lastBuildDate>Wed, 19 Aug 2020 02:13:50 +0000</lastBuildDate>
     
-	<atom:link href="https://jeanpbond.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cloudnative.blog/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to write a kubectl plugin using Golang</title>
-      <link>https://jeanpbond.github.io/2020/08/19/how-to-build-a-kubectl-plugin/</link>
+      <link>https://cloudnative.blog/2020/08/19/how-to-build-a-kubectl-plugin/</link>
       <pubDate>Wed, 19 Aug 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://jeanpbond.github.io/2020/08/19/how-to-build-a-kubectl-plugin/</guid>
+      <guid>https://cloudnative.blog/2020/08/19/how-to-build-a-kubectl-plugin/</guid>
       <description>Table of contents  Introduction Decide which plugin you want to develop Clone the Krew plugin template Implementing the plugin Installing the plugin Releasing the plugin on Github Publishing the plugin on Krew  Introduction Have you ever thought about extending kubectl cli to add a missing functionality? Actually, extending kubectl is fairly easy, in this blog post I’ll explain how you can write your own plugin with Go. Plugin can be develop in any programming language, but using Go is interesting since there is a template that you can use that make it easy to set all of the scaffolding up for a new plugin and even though there is Kubernetes SDK in most language, the primary Kubernetes libraries are all written in Go.</description>
     </item>
     
