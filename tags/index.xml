@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cloud Native blog</title>
-    <link>https://cloudnative.blog/tags/</link>
+    <link>jeanpbond.github.io/tags/</link>
     <description>Recent content in Tags on Cloud Native blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jean-Philippe Bond</copyright>
     <lastBuildDate>Wed, 19 Aug 2020 02:13:50 +0000</lastBuildDate>
     
-	<atom:link href="https://cloudnative.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="jeanpbond.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devops</title>
-      <link>https://cloudnative.blog/tags/devops/</link>
+      <link>jeanpbond.github.io/tags/devops/</link>
       <pubDate>Wed, 19 Aug 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://cloudnative.blog/tags/devops/</guid>
+      <guid>jeanpbond.github.io/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://cloudnative.blog/tags/go/</link>
+      <link>jeanpbond.github.io/tags/go/</link>
       <pubDate>Wed, 19 Aug 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://cloudnative.blog/tags/go/</guid>
+      <guid>jeanpbond.github.io/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://cloudnative.blog/tags/golang/</link>
+      <link>jeanpbond.github.io/tags/golang/</link>
       <pubDate>Wed, 19 Aug 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://cloudnative.blog/tags/golang/</guid>
+      <guid>jeanpbond.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>K8s</title>
-      <link>https://cloudnative.blog/tags/k8s/</link>
+      <link>jeanpbond.github.io/tags/k8s/</link>
       <pubDate>Wed, 19 Aug 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://cloudnative.blog/tags/k8s/</guid>
+      <guid>jeanpbond.github.io/tags/k8s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubectl</title>
-      <link>https://cloudnative.blog/tags/kubectl/</link>
+      <link>jeanpbond.github.io/tags/kubectl/</link>
       <pubDate>Wed, 19 Aug 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://cloudnative.blog/tags/kubectl/</guid>
+      <guid>jeanpbond.github.io/tags/kubectl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://cloudnative.blog/tags/kubernetes/</link>
+      <link>jeanpbond.github.io/tags/kubernetes/</link>
       <pubDate>Wed, 19 Aug 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://cloudnative.blog/tags/kubernetes/</guid>
+      <guid>jeanpbond.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plugin</title>
-      <link>https://cloudnative.blog/tags/plugin/</link>
+      <link>jeanpbond.github.io/tags/plugin/</link>
       <pubDate>Wed, 19 Aug 2020 02:13:50 +0000</pubDate>
       
-      <guid>https://cloudnative.blog/tags/plugin/</guid>
+      <guid>jeanpbond.github.io/tags/plugin/</guid>
       <description></description>
     </item>
     
