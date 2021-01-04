@@ -154,7 +154,7 @@
 
 <h2 id="implementing-the-plugin">Implementing the plugin</h2>
 
-<p>After cloning the project, the first thing to do is to modify the CLI endpoint <a href="https://github.com/runoncloud/kubectl-np-viewer/blob/master/cmd/plugin/cli/root.go">cmd/plugin/cli/root.go</a>. This is where you&rsquo;ll be able to defined the name of your command, parameters, flags, etc. Checkout out the <a href="https://github.com/spf13/cobra#getting-started">Cobra documentation</a> for a detailed explanation of what can be done with the tool.</p>
+<p>After cloning the project, the first thing to do is to modify the CLI endpoint <a href="https://github.com/runoncloud/kubectl-np-viewer/blob/master/cmd/plugin/cli/root.go">cmd/plugin/cli/root.go</a>. This is where you&rsquo;ll be able to defined the name of your command, parameters, flags, etc. Check out the <a href="https://github.com/spf13/cobra#getting-started">Cobra documentation</a> for a detailed explanation of what can be done with the tool.</p>
 
 <p>For our plugin, we need to register new flags to filters the Network Policies and implement a simple run function which will call our plugin code :</p>
 
